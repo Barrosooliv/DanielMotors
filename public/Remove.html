@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carroestilo.css" rel="stylesheet">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+
+    <img id=carrofaixa src="Imagens/carrofaixa.png" width="450px" height="100px">
+    <div class = "faixa"> <h1 id="pad"> Daniel Motors </h1> </div>
+    <div class = "subfaixa"> Remover carro do sistema </div>
+    <a class="voltar" href="menu.html"> << Voltar </a>
+
+    <div class= "meio2">
+        
+        <div class="formularios2">
+
+            <form action="/carro_rmv" method="post">
+                <div class="texto">Marca:</div> <br> <input type="text" name="marca_rmv">
+                <div class="texto">Modelo:</div> <br> <input type="text" name="modelo_rmv"> <br>
+                <div class="texto">Ano:</div> <br> <input type="number" name="ano_rmv"> <br>
+                <div class="texto">Quantidade:</div> <br> <input type="number" name="qtd_rmv">
+                <input id="botao_cdtr" type="submit" name="submit" value="Remover Carro"> 
+            </form>
+
+        </div>
+
+    </div><!-- Rever dps --> 
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carroestilo.css" rel="stylesheet">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+
+    <img id=carrofaixa src="Imagens/carrofaixa.png" width="450px" height="100px">
+    <div class = "faixa"> <h1 id="pad"> Daniel Motors </h1> </div>
+    <div class = "subfaixa"> Atualiza carro do sistema </div>
+    <a class="voltar" href="menu.html"> << Voltar </a>
+
+    <div id="ajustar">
+        <div class= "meio3">
+            
+            <div class="formularios">
+
+                <h2>Dados Antigos</h2>
+
+                <form action="/carro_atl" method="post">
+
+                    <div class="texto">Marca:</div> <br> <input class="input" type="text" name="marca_old">
+                    <div class="texto">Modelo:</div> <br> <input class="input" type="text" name="modelo_old"><br>
+                    <div class="texto">Ano:</div> <br> <input class="input" type="number" name="ano_old"><br>
+                    <div class="texto">Quantidade:</div> <br> <input class="input" type="number" name="qtd_old">
+
+            </div>
+
+            <h2>Dados Novos</h2><br>
+
+            <div class="formularios">
+
+                    <div class="texto">Marca:</div> <br> <input class="input" type="text" name="marca_atl">
+                    <div class="texto">Modelo:</div> <br> <input class="input" type="text" name="modelo_atl"><br>
+                    <div class="texto">Ano:</div> <br> <input class="input" type="number" name="ano_atl"><br>
+                    <div class="texto">Quantidade:</div> <br> <input class="input" type="number" name="qtd_atl">
+                    <input id="botao_cdtr" type="submit" name="submit" value="Atualizar Carro"> 
+                    
+                </form>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="pé"></div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

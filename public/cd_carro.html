@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carroestilo.css" rel="stylesheet">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+
+    <img id=carrofaixa src="Imagens/carrofaixa.png" width="450px" height="100px">
+    <div class = "faixa"> <h1 id="pad"> Daniel Motors </h1> </div>
+    <div class = "subfaixa"> Cadastrar carro no sistema </div>
+    <a class="voltar" href="menu.html"> << Voltar </a>
+
+    <div class= "meio2">
+        
+        <div class="formularios2">
+
+            <form action="/carro_cdtr" method="post">
+                <div class="texto">Marca:</div> <br> <input type="text" name="marca">
+                <div class="texto">Modelo:</div> <br> <input type="text" name="modelo"><br>
+                <div class="texto">Ano:</div> <br> <input type="number" name="ano"><br>
+                <div class="texto">Imagem:</div> <br> <input type="text" name="url"><br>
+                <div class="texto">Quantidade:</div> <br> <input type="number" name="qtd_car">
+                <input id="botao_cdtr" type="submit" name="submit" value="Cadastrar Carro"> 
+            </form>
+
+        </div>
+            
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carroestilo.css" rel="stylesheet">
+    <title>Loja</title>
+</head>
+<body>
+
+    <img id=carrofaixa src="Imagens/carrofaixa.png" width="450px" height="100px">
+    
+    <div class = "faixa2"> <h1 id="pad"> Daniel Motors </h1> </div>
+    <div class = "subfaixa2"> Página de Compra </div>
+    <a class="voltar" href="menu.html"> << Voltar </a>
+    
+    <% for(var i = 0; i < carros.length; i++) { %>
+    <div class="compra">
+            <div class="caixacompra">
+                
+            <form action="/compra_carro_atl" method="post">
+
+            <img class="imagemcarrocompra" src="<%= carros[i].db_imagem %>"><br>
+            Marca: <%= carros[i].db_marca %><br>
+            Modelo: <%= carros[i].db_modelo %><br>
+            Ano: <%= carros[i].db_ano %><br>
+            Quantidade: <%= carros[i].db_quantidade %><br>
+
+            <input type="hidden" name="id" value="<%= carros[i]._id %>">
+            <input type="hidden" name="quantidade" value="<%= carros[i].db_quantidade %>">
+                    
+            <input type="submit" id="botao_compra" value="Comprar">
+                    
+            </form>
+
+            </div>    
+    </div>
+    <% } %>
+
+</body>
+</html>
